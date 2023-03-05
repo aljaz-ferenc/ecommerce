@@ -90,7 +90,7 @@ export default function PersonalInfo({ addState }) {
             <label htmlFor="first-name">First name:</label>
             <input
               ref={firstNameRef}
-              
+              required
               name="first-name"
               id="first-name"
               type="text"
@@ -100,7 +100,7 @@ export default function PersonalInfo({ addState }) {
             <label htmlFor="last-name">Last name:</label>
             <input
               ref={lastNameRef}
-              
+              required
               name="last-name"
               id="last-name"
               type="text"
@@ -110,7 +110,7 @@ export default function PersonalInfo({ addState }) {
             <label htmlFor="address">Address:</label>
             <input
               ref={addressRef}
-              
+              required
               name="address"
               id="address"
               type="text"
@@ -118,13 +118,13 @@ export default function PersonalInfo({ addState }) {
           </div>
           <div className="form__input-container">
             <label htmlFor="city">City:</label>
-            <input ref={cityRef}  name="city" id="city" type="text" />
+            <input required ref={cityRef}  name="city" id="city" type="text" />
           </div>
           <div className="form__input-container">
             <label htmlFor="country">Country:</label>
             <input
               ref={countryRef}
-              
+              required
               name="country"
               id="country"
               type="text"
@@ -134,7 +134,7 @@ export default function PersonalInfo({ addState }) {
             <label htmlFor="email">Email:</label>
             <input
               ref={emailRef}
-              
+              required
               name="email"
               id="email"
               type="email"
@@ -146,12 +146,12 @@ export default function PersonalInfo({ addState }) {
           <h3>Card details</h3>
           <div className="card-num">
             <label htmlFor="card-number">Card number</label>
-            <input ref={cardNumberRef}  type="number" />
+            <input required ref={cardNumberRef}  type="number" />
           </div>
           <div className="bottom-row">
             <div>
               <label htmlFor="">Month</label>
-              <select ref={monthRef}  name="" id="">
+              <select required ref={monthRef}  name="" id="">
                 <option value="1"></option>
                 <option value="1">1</option>
                 <option value="1">2</option>
@@ -169,11 +169,11 @@ export default function PersonalInfo({ addState }) {
             </div>
             <div>
               <label htmlFor="">Year</label>
-              <input ref={yearRef}  type="number" />
+              <input required ref={yearRef}  type="number" />
             </div>
             <div>
               <label htmlFor="">CCV</label>
-              <input ref={ccvRef}  type="number" name="" id="" />
+              <input required ref={ccvRef}  type="number" name="" id="" />
             </div>
           </div>
           <p className="form-note">

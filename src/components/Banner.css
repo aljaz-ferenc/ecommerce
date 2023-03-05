@@ -1,6 +1,6 @@
 .banner{
     display: flex;
-    height: 3rem;
+    height: 4rem;
     justify-content: space-between;
     align-items: center;
     gap: 8rem;
@@ -9,7 +9,16 @@
     padding: .5rem 5%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 999;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .search__container{
@@ -34,9 +43,11 @@
 
 .search__btn{
     display: inline-block;
+    width: 3rem !important;
     height: 100% !important;
     padding: 0 .7rem;
     background-color: rgb(25, 118, 210);
+    color: #fff;
     border: none;
     cursor: pointer;
 }

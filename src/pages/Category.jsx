@@ -41,7 +41,6 @@ export default function Category() {
     <>
           {isLoading && <h3 className="loading-text">Loading...</h3>}
       <div className="products__layout">
-        <Sidebar />
         <div className="products">
           <div className="products__top">
             <h2 className="products__heading">

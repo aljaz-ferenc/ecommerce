@@ -27,7 +27,7 @@ const CategoryCard = ({ name, id, text, loading, countLoaded }) => {
   return (
     <div style={{display: loading ? 'none' : 'block'}} className="category-card" onClick={handleCategory}>
       <span className="category-card__title">{name.toUpperCase()}</span>
-      <img onLoad={countLoaded} className="category-card__img" src={images[id - 1]} alt="" />
+      <img onLoad={countLoaded} className="category-card__img" src={images[id - 1]} alt="product" />
     </div>
   );
 };

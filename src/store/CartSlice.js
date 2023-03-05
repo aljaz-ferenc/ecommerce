@@ -19,6 +19,9 @@ const CartSlice = createSlice({
         removeFromCart(state, action){
             const index = state.findIndex(el => +el.id === +action.payload)
             state = state.splice(index, 1)
+        },
+        emptyCart(state, action){
+            return state = []
         }
     }
 })

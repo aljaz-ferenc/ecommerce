@@ -1,16 +1,28 @@
 .sidebar{
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    width: 100vw;
+    justify-content: space-around;
     align-self: flex-start;
-    background-color: grey;
-    width: max-content;
+    background-color: rgb(210, 210, 210);
+    /* position: sticky; */
+    /* top: 4rem;
+    position: sticky; */
+    z-index: 9999;
+}
+
+.sidebar a{
+    color: black;
+    text-decoration: none;
 }
 
 .sidebar__category{
-    padding: .5rem 2rem;
-    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
 }
 .sidebar__category:hover{
-    background-color: rgb(53, 52, 52);
+    background-color: rgb(108, 107, 107);
+    color: #fff;
 }

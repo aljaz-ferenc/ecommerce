@@ -60,11 +60,11 @@
 }
 
 .also-bought__text{
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
+    max-width: 20rem;
 }
 
 .added{
@@ -82,6 +82,7 @@
 
 .similar-items{
     display: flex;
+    gap: 5rem;
 }
 
 .also-bought__container a{

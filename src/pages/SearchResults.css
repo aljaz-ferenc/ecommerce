@@ -1,0 +1,8 @@
+.search-results{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    max-width: 90%;
+    margin: 5rem auto;
+}

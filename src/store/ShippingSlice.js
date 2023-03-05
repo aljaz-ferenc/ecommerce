@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const ShippingSlice = createSlice({
     name: 'shippingSlice',
-    initialState: null,
+    initialState: { shipping: 'Express shipping', cost: 5.53 },
     reducers: {
-        setShipping(state, action){
+        setShipping(state, action) {
             return state = action.payload
         }
     }

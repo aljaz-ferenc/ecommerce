@@ -40,6 +40,12 @@ export default function Details() {
     }, 2500);
   }
 
+  function redirect (path){
+    console.log(path)
+    navigate(path)
+    history.push(path)
+  }
+
   return (
     <>
       <div
@@ -53,7 +59,7 @@ export default function Details() {
           <img
             className="product__image"
             src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${item[0].image}`}
-            alt=""
+            alt="product"
           />
         )}
         <div className="product__text">
@@ -70,39 +76,45 @@ export default function Details() {
           <h2 className="bought-together__heading">
             Frequently bought together:
           </h2>
+
+
+
           <div className="similar-items">
             {similarItems && (
-              <div
-                onClick={() => navigate(`/product/${similarItems[0].name}`)}
-                className="also-bought"
+              <Link
+              onClick={() => redirect(`/product/${similarItems[0].name}`)}
               >
-                {similarItems && (
-                  <img
-                    className="also-bought__image"
-                    src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${similarItems[0].image}`}
-                    alt=""
-                  />
+              {/* onClick={() => navigate(`/product/${similarItems[0].name}`)}
+              className="also-bought" */}
+              
+              {similarItems && (
+                <img
+                className="also-bought__image"
+                src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${similarItems[0].image}`}
+                alt="product"
+                />
                 )}
-                <Link
-                  to={`/product/${similarItems[0].name}`}
-                  className="also-bought__text"
-                >
+                <div className="also-bought__text">
+                  
                   {similarItems && <h3>{similarItems[0].name}</h3>}
                   {similarItems && <div>{similarItems[0].description}</div>}
                   {similarItems && <div>${similarItems[0].price}</div>}
+                </div>
                 </Link>
-              </div>
             )}
+
+
+
+
             {similarItems && (
               <Link
-                to={`/product/${similarItems[1].name}`}
-                className="also-bought"
+              onClick={() => redirect(`/product/${similarItems[1].name}`)}
               >
                 {similarItems && (
                   <img
                     className="also-bought__image"
                     src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${similarItems[1].image}`}
-                    alt=""
+                    alt="product"
                   />
                 )}
                 <div className="also-bought__text">
@@ -113,6 +125,11 @@ export default function Details() {
               </Link>
             )}
           </div>
+
+
+
+
+
         </div>
       </div>
     </>

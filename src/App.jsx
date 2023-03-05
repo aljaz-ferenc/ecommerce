@@ -17,6 +17,8 @@ import CartContent from "./components/CartContent";
 import CompleteOrder from "./pages/CompleteOrder";
 import PersonalInfo from "./pages/PersonalInfo";
 import ErrorPage from "./pages/ErrorPage";
+import Thanks from "./pages/Thanks";
+import SearchResults from "./pages/SearchResults";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +26,7 @@ const router = createBrowserRouter(
     <Route exact path="/" errorElement={<ErrorPage/>} element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="product/:product" element={<Details />} />
+      <Route exact path="search-results" element={<SearchResults />} />
       <Route path=":category" element={<Category />} />
     </Route>
       <Route path="cart" errorElement={<h1>Seems like this page doesn't exist :(</h1>} element={<Cart />} >
@@ -31,6 +34,7 @@ const router = createBrowserRouter(
         <Route exact path="shipping" element={<Shipping/>}/>
         <Route exact path="personal-info" element={<PersonalInfo/>}/>
         <Route exact path="complete-order" element={<CompleteOrder/>}/>
+        <Route exact path="thanks" element={<Thanks/>}/>
       </Route>
       <Route path="*" element={<NotFound />} />
     </>

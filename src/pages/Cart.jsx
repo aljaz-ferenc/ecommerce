@@ -9,15 +9,12 @@ import { useDispatch } from "react-redux";
 import { stateActions } from "../store/StateSlice";
 
 export default function Cart() {
-  const cart = useSelector((state) => state.cart);
-  const shipping = useSelector((state) => state.shipping);
   const [headingState, setHeadingState] = useState("Your Cart");
-  const navigate = useNavigate();
-  // const [state, setState] = useState(0);
-  const [isDisabled, setIsDisabled] = useState(false);
   const [buttonText, setButtonText] = useState("continue");
-  const dispatch = useDispatch()
-  const state = useSelector(state => state.state)
+  const cart = useSelector((state) => state.cart);
+  const state = useSelector((state) => state.state);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const subTotal = cart.reduce((acc, el) => {
     return acc + +el.total;
@@ -25,17 +22,12 @@ export default function Cart() {
 
   function handleBack() {
     if (state > 0) {
-      dispatch(stateActions.setState(-1))
+      dispatch(stateActions.setState(-1));
     }
   }
 
   function handleContinue(e) {
-    state === 3 ? null : dispatch(stateActions.setState(1))
-    if ((state === 0) & !shipping) {
-      setIsDisabled(true);
-    } else {
-      setIsDisabled(false);
-    }
+    state === 3 ? null : dispatch(stateActions.setState(1));
   }
 
   useEffect(() => {
@@ -45,17 +37,10 @@ export default function Cart() {
       navigate("/cart/personal-info");
     }
     if (state === 3) {
-      // setState(4);
       navigate("/cart/complete-order");
     }
-
     setHeading();
-    console.log(state);
   }, [state]);
-
-  useEffect(() => {
-    setIsDisabled(false);
-  }, [shipping]);
 
   function setHeading() {
     if (state === 0) {
@@ -76,8 +61,8 @@ export default function Cart() {
     }
   }
 
-  function stateZero(){
-    dispatch(stateActions.setState(0))
+  function stateZero() {
+    dispatch(stateActions.setState(0));
   }
 
   return (
@@ -88,25 +73,24 @@ export default function Cart() {
           <Link onClick={stateZero} className="back-link" to="/">
             Back to store
           </Link>
-          <Outlet  />
-          {state > 1 || <div className="cart__footer">
-            Sub-total: ${subTotal} (+ Shipping)
-          </div>}
-          {state > 1 || <div className="cart-buttons">
-            {cart.length === 0 || (
-              <div className="cart-buttons__buttons">
-                <button onClick={handleBack} className={state || "disabled"}>
-                  Back
-                </button>
-                  <button
-                  onClick={handleContinue}
-                  className={isDisabled ? "disabled" : null}
-                >
-                  {buttonText}
-                </button>
-              </div>
-            )}
-          </div>}
+          <Outlet />
+          {state > 1 || (
+            <div className="cart__footer">
+              Sub-total: ${subTotal} (+ Shipping)
+            </div>
+          )}
+          {state > 1 || (
+            <div className="cart-buttons">
+              {cart.length === 0 || (
+                <div className="cart-buttons__buttons">
+                  <button onClick={handleBack} className={state || "disabled"}>
+                    Back
+                  </button>
+                  <button onClick={handleContinue}>{buttonText}</button>
+                </div>
+              )}
+            </div>
+          )}
         </div>
         {cart.length === 0 || <CartNavigation state={state} />}
       </div>

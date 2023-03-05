@@ -1,0 +1,19 @@
+.thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.spinner{
+    width: 3rem;
+}
+.thanks-processed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    gap: 2rem;
+}

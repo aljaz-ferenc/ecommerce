@@ -2,12 +2,14 @@ import { useSelector } from "react-redux";
 import "./CompleteOrder.css";
 import { useDispatch } from "react-redux";
 import { stateActions } from "../store/StateSlice";
+import {useNavigate} from 'react-router-dom'
 
 export default function CompleteOrder() {
   const cart = useSelector((state) => state.cart);
   const person = useSelector((state) => state.personalInfo);
   const shipping = useSelector((state) => state.shipping);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   const total = cart.reduce((acc, item) => {
     return (acc += item.total);
@@ -15,6 +17,10 @@ export default function CompleteOrder() {
 
   function handleBack() {
     dispatch(stateActions.setState(-1));
+  }
+
+  function order(){
+    navigate('/cart/thanks')
   }
 
   return (
@@ -66,7 +72,7 @@ export default function CompleteOrder() {
       </div>
       <div className="order-btns">
       <button className="order-back-btn" onClick={handleBack}>Back</button>
-      <button className="order-btn">Order</button>
+      <button onClick={order} className="order-btn">Order</button>
       </div>
     </div>
   );

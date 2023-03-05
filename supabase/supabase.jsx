@@ -73,5 +73,3 @@ export async function getSpecificItem(item){
     return error
   }
 }
-
-

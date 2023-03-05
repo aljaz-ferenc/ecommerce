@@ -41,13 +41,21 @@
   width: 400%;
   height: 100%;
   transition: all 2s;
+  color: #fff;
+}
+
+.slider-image-container>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 .image1 {
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url("../images/banner1.webp");
     background-size: cover;
@@ -62,8 +70,8 @@
   background-position: 25% 65%;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url("../images/banner2.webp");
 }
@@ -74,8 +82,8 @@
   background-position: 50% 60%;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url("../images/banner3.webp");
 }
@@ -86,8 +94,8 @@
   background-position: 25% 80%;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url("../images/banner4.webp");
 }

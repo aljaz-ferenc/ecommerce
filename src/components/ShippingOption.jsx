@@ -1,7 +1,6 @@
 import "./ShippingOption.css";
 import { shippingActions } from "../store/ShippingSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
 
 export default function ShippingOption({
   price,
@@ -11,14 +10,14 @@ export default function ShippingOption({
   description,
   id,
 }) {
-  const [shippingOption, setShippingOption] = useState(null);
   const dispatch = useDispatch()
   const shipping = useSelector(state => state.shipping)
   
   function handleSelectShipping() {
     dispatch(shippingActions.setShipping({shipping: title, cost: price}))
-    setShippingOption({shipping: title})
   }
+
+  console.log(title)
 
   return (
     <div className = {shipping?.shipping === title ? "shipping-input selected" : "shipping-input"}>
@@ -30,7 +29,7 @@ export default function ShippingOption({
         checked={shipping?.shipping === title ? true : false}
       />
       <label htmlFor={id} className="shipping-option">
-        <img src={image} alt="" />
+        <img src={image} alt="shipping option" />
         <div className="shipping-option__text">
           <h3>
             {title} - ${price}
