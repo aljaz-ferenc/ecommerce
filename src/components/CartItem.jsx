@@ -16,7 +16,7 @@ export default function CartItem({ image, title, id, price, total, amount }) {
     <div className="cart-item">
       <img
         className="cart-item__image"
-        src={`../../data/images/${image}`}
+        src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${image}`}
         alt=""
       />
       <div className="cart-item__text">

@@ -52,7 +52,7 @@ export default function Details() {
         {similarItems && (
           <img
             className="product__image"
-            src={`../data/images/${item[0].image}`}
+            src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${item[0].image}`}
             alt=""
           />
         )}
@@ -79,7 +79,7 @@ export default function Details() {
                 {similarItems && (
                   <img
                     className="also-bought__image"
-                    src={`../data/images/${similarItems[0].image}`}
+                    src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${similarItems[0].image}`}
                     alt=""
                   />
                 )}
@@ -101,7 +101,7 @@ export default function Details() {
                 {similarItems && (
                   <img
                     className="also-bought__image"
-                    src={`../data/images/${similarItems[1].image}`}
+                    src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${similarItems[1].image}`}
                     alt=""
                   />
                 )}

@@ -5,7 +5,7 @@ export default function ProductCard({title, description, price, image, id, count
   const navigate = useNavigate()
   return (
     <div onLoad={count} className='product-card' onClick={() => navigate(`/product/${title}`)}>
-        <img  src={`../data/images/${image}`} alt="" />
+        <img  src={`https://hbrtheedcngbriamntkr.supabase.co/storage/v1/object/public/images/${image}`} alt="" />
         <div className='product-card__text'>
             <div className='product-card__text--title'>{title}</div>
             <div className='product-card__text--description'>{description}</div>
