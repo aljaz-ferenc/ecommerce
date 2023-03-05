@@ -1,0 +1,39 @@
+.products__layout{
+    display: flex;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.products__top{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem 1rem;
+    max-width: 90%;
+    align-self: center;
+}
+
+.products__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.products__list{
+    display: flex;
+    gap: 5rem;
+}
+
+.products__heading{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.category__text{
+    font-size: 2rem;
+}

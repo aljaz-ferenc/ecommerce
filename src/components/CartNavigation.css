@@ -1,0 +1,63 @@
+.cart-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    max-width: 30rem;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all .5s ease-out;
+}
+
+.number{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.number::before{
+    content: '';
+    position: absolute;
+    height: 150%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(25, 118, 210);
+    z-index: -1;
+}
+
+.number::after{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .8rem;
+}
+
+.cart-navigation .number:first-child::after{
+    content: 'Preview Cart';
+    width: max-content;
+}
+.cart-navigation .number:nth-child(2)::after{
+    content: 'Shipping';
+    width: max-content;
+}
+.cart-navigation .number:nth-child(3)::after{
+    content: 'Personal info';
+    width: max-content;
+}
+.cart-navigation .number:nth-child(4)::after{
+    content: 'Complete Order';
+    width: max-content;
+}

@@ -1,0 +1,40 @@
+.order-details__items{
+    width: 100%;
+}
+
+.order-details__item td, tr, table{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.order-details__items td:nth-child(2){
+    text-align: center;
+}
+
+.order-details__items td{
+    padding: 0 .5rem;
+}
+
+.order-total{
+    margin-top: 1rem;
+}
+
+.order-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-info span:first-child{
+    width: 5rem;
+}
+.order-info span:nth-child(2){
+    font-weight: bold;
+}
+
+.order-info > div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+}

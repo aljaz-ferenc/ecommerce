@@ -1,0 +1,17 @@
+.popular{
+    margin: 3rem 0;
+}
+
+.popular:last-child{
+    margin-bottom: 0;
+}
+
+.popular__container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.popular__heading{
+    text-align: center;
+}

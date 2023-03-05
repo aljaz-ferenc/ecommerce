@@ -1,0 +1,8 @@
+.shipping{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 95%;
+    margin: 0 auto;
+}

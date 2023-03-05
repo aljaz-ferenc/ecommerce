@@ -1,0 +1,107 @@
+.personal-info{
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.form-note{
+    font-style: italic;
+    font-size: .8rem;
+    grid-column: 1 / -1;
+}
+
+.form-left{
+    grid-row: 1;
+    grid-column: 1;
+}
+.form-right{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.form-submit-btn{
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: 5rem;
+    background-color: rgb(25, 118, 210);
+    padding: .8rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .1s;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.personal-back-btn{
+    width: 5rem;
+    background-color: rgb(25, 118, 210);
+    padding: .8rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .1s;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-btns{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 /-1;
+}
+
+.form-submit-btn:hover{
+    background-color: rgb(60, 150, 239);
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    gap: 2rem;
+}
+
+.form__input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.card-num{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-row{
+    display: flex;
+    gap: 1rem;
+}
+
+.bottom-row input{
+    width: 100%;
+}
+
+.bottom-row > div:not(:first-child){
+    display: flex;
+    flex-direction: column;
+} 

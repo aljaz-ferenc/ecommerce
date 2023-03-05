@@ -1,0 +1,102 @@
+.home{
+  background-color: aliceblue;
+}
+
+.slider {
+  width: 100vw;
+  height: 300px;
+  max-height: 300px;
+  overflow-y: hidden;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.slider__chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  height: 30%;
+  color: #191919;
+  filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+  cursor: pointer;
+}
+
+.slider__chevron:hover {
+  color: rgb(54, 54, 54);
+}
+
+.slider .left {
+  left: 0;
+}
+.slider .right {
+  right: 0;
+}
+
+.slider-image-container {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: all 2s;
+}
+
+.image1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100vw;
+  height: 100%;
+}
+.image2 {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: 25% 65%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/banner2.jpg");
+}
+.image3 {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 60%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/banner3.jpg");
+}
+.image4 {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: 25% 80%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/banner4.jpg");
+}
+
+.categories-list{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding-top: 3rem;
+}

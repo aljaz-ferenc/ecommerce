@@ -1,0 +1,37 @@
+.shipping-option{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid rgb(224, 224, 224);
+    padding: .5rem;
+    cursor: pointer;
+    width: 100%;
+    outline: 3px solid transparent;
+    transition: all .2s;
+}
+
+.shipping-option:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.shipping-input.selected .shipping-option{
+    outline: 3px solid rgb(25, 118, 210);
+} 
+
+.shipping-option__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .2rem;
+    font-size: .8rem;
+}
+
+.shipping-option img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.shipping-input{
+    display: flex;
+    gap: 2rem;
+}

@@ -1,0 +1,25 @@
+.popular{
+    background-color: #c3dcf7;
+    padding: 2rem 0;
+}
+
+.popular-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 10rem;
+    aspect-ratio: 1;
+    margin: 0 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.popular-card img{
+    width: 100%;
+}
+
+.popular__price{
+    align-self: flex-start;
+}

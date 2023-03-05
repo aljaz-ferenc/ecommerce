@@ -1,0 +1,31 @@
+.category-card{
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.category-card img{
+    transition: scale .2s;
+}
+
+.category-card:hover img{
+    scale: 1.1;
+}
+
+.category-card__title{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    z-index: 100;
+}
+
+.category-card__img{
+    height: 100%;
+}

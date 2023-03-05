@@ -1,0 +1,125 @@
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5rem 0;
+  gap: 2rem;
+  padding: 3rem 20%;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgb(25, 118, 210);
+}
+
+.cart__container {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  width: 100%;
+  max-width: 50rem; 
+  margin-bottom: 3rem;
+  height: 65vh;
+
+}
+
+.cart-item__amount {
+  display: flex;
+}
+
+.cart-item__amount--adjust{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item__amount--adjust svg{
+  transition: all .1s;
+}
+
+.cart-item__amount--adjust svg:hover{
+  fill: rgba(25, 118, 210, 0.13);
+}
+
+.cart-item__amount--remove{
+    display: flex;
+    gap: 1rem;
+    border: 2px solid red;
+    padding: .3rem .8rem ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s;
+    color: red;
+}
+
+.cart-item__amount--remove svg{
+    width: 1rem;
+    scale: 1.3;
+}
+
+.cart-item__amount--remove:hover{
+ background-color: red;
+ color: #fff;
+}
+
+.cart__footer{
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.cart-buttons{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.cart-buttons__buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cart-buttons__buttons button{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(25, 118, 210);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  width: 10rem;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.cart-buttons__buttons button:hover{
+  background-color: rgb(44, 135, 225);
+}
+
+.cart-buttons .disabled,
+.cart-buttons .disabled:hover{
+  background-color: gray;
+}
+
+.cart .back-link{
+  align-self: flex-start;
+  color: rgb(44, 135, 225);
+  text-decoration: none;
+  border: 1px solid rgb(44, 135, 225);
+  padding: .3rem .8rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: .2s;
+}
+
+.cart .back-link:hover{
+  color: #fff;
+  background-color: rgb(44, 135, 225);
+}
+
+.cart__header{
+color: #fff;
+}

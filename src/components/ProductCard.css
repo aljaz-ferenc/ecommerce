@@ -1,0 +1,32 @@
+.product-card{
+    height: 15rem;
+    aspect-ratio: 2;
+    display: flex;
+    border: 1px solid rgb(215, 214, 214);
+    padding: 1rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.product-card:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.product-card img{
+    height: 100%;
+}
+
+.product-card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.product-card__text--title{
+    font-weight: bold;
+}
+
+.product-card__text--price{
+    margin-top: auto;
+}

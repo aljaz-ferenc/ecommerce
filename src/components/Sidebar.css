@@ -1,0 +1,16 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-self: flex-start;
+    background-color: grey;
+    width: max-content;
+}
+
+.sidebar__category{
+    padding: .5rem 2rem;
+    cursor: pointer;
+}
+.sidebar__category:hover{
+    background-color: rgb(53, 52, 52);
+}
