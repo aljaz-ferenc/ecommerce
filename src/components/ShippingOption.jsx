@@ -16,7 +16,7 @@ export default function ShippingOption({
   const shipping = useSelector(state => state.shipping)
   
   function handleSelectShipping() {
-    dispatch(shippingActions.setShipping({shipping: title}))
+    dispatch(shippingActions.setShipping({shipping: title, cost: price}))
     setShippingOption({shipping: title})
   }
 

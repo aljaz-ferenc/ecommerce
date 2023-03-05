@@ -15,3 +15,8 @@
 .popular__heading{
     text-align: center;
 }
+
+.popular a{
+    color: black;
+    text-decoration: none;
+}

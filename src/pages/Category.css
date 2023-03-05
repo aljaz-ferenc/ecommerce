@@ -22,6 +22,7 @@
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
+    animation: fadein 1.5s;
 }
 
 .products__list{
@@ -36,4 +37,16 @@
 
 .category__text{
     font-size: 2rem;
+}
+
+.loading-text{
+    text-align: center;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }

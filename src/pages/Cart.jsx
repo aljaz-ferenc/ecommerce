@@ -90,7 +90,7 @@ export default function Cart() {
           </Link>
           <Outlet  />
           {state > 1 || <div className="cart__footer">
-            Sub Total: ${subTotal} (+ Shipping)
+            Sub-total: ${subTotal} (+ Shipping)
           </div>}
           {state > 1 || <div className="cart-buttons">
             {cart.length === 0 || (

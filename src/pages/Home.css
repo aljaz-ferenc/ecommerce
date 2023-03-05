@@ -1,5 +1,6 @@
 .home{
   background-color: aliceblue;
+  min-height: 100vh;
 }
 
 .slider {
@@ -48,11 +49,11 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../images/banner1.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100vw;
-  height: 100%;
+    url("../images/banner1.webp");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100vw;
+    height: 100%;
 }
 .image2 {
   width: 100vw;
@@ -64,7 +65,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../images/banner2.jpg");
+    url("../images/banner2.webp");
 }
 .image3 {
   width: 100vw;
@@ -76,7 +77,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../images/banner3.jpg");
+    url("../images/banner3.webp");
 }
 .image4 {
   width: 100vw;
@@ -88,7 +89,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../images/banner4.jpg");
+    url("../images/banner4.webp");
 }
 
 .categories-list{
@@ -100,3 +101,4 @@
   gap: 2rem;
   padding-top: 3rem;
 }
+

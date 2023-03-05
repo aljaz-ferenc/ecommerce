@@ -20,7 +20,6 @@
 }
 
 .order-info{
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -37,4 +36,40 @@
     justify-content: flex-start;
     width: 100%;
     gap: 2rem;
+}
+
+.total-order{
+    margin-top: 2rem;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.complete-order{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.order-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-btns button{
+    width: 5rem;
+    background-color: rgb(25, 118, 210);
+    padding: .8rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .1s;
+    font-size: 1rem;
+    font-family: inherit;
 }

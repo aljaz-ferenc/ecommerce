@@ -4,8 +4,7 @@ import PopularCard from "./PopularCard";
 import "./MostPopular.css";
 import { getAllItems } from "../../supabase/supabase";
 
-export default function MostPopular({title}) {
-  // const categories = useSelector((state) => state.store);
+export default function MostPopular({title, loading}) {
   const [mostPopular, setMostPopular] = useState([]);
  const randNums = []
 
@@ -22,7 +21,7 @@ useEffect(() => {
 
 
   return (
-    <div className="popular">
+    <div style={{display: loading ? 'none' : 'block'}} className="popular">
       <h2 className="popular__heading">{title}</h2>
       <div className="popular__container">
         {mostPopular.length > 0 &&

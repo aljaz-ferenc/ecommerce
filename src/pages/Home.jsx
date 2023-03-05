@@ -1,9 +1,8 @@
 import Banner from "../components/Banner";
 import Slider from "../components/Slider";
+import ClipLoader from "react-spinners/ClipLoader";
 
 import { useEffect, useState } from "react";
-import { storeActions } from "../store/StoreSlice";
-import { useDispatch, useSelector } from "react-redux";
 import { getCategories } from "../../supabase/supabase";
 
 import "./Home.css";
@@ -12,26 +11,43 @@ import MostPopular from "../components/MostPopular";
 
 export default function Home() {
   const [categories, setCategories] = useState([]);
+  const [counter, setCounter] = useState(0)
+  const [loading, setLoading] = useState(true)
+
+  function countLoaded(){
+    setCounter(prevCount => prevCount + 1)
+  }
+
+  useEffect(() => {
+    if(counter === 6){
+      setLoading(false)
+    }
+    console.log(loading)
+  }, [counter])
 
   useEffect(() => {
     getCategories().then((cats) => setCategories(cats));
   }, []);
 
+
   return (
     <div className="home">
       <div className="categories-list">
-        {categories &&
+        {loading &&  <h3>Loading...</h3>}
+        {categories && 
           categories.map((category) => (
             <CategoryCard
-              key={category.id}
-              name={category.category}
-              text={category.description}
-              id={category.id}
+            countLoaded={countLoaded}
+            loading={loading}
+            key={category.id}
+            name={category.category}
+            text={category.description}
+            id={category.id}
             />
-          ))}
+            ))}
       </div>
-      <MostPopular title="Most Popular" />
-      <MostPopular title="Great Deals" />
+      <MostPopular loading={loading} title="Most Popular" />
+      <MostPopular loading={loading} title="Great Deals" />
     </div>
   );
 }

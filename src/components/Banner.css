@@ -7,6 +7,9 @@
     margin: 0 auto;
     background-color: rgb(46, 46, 46);
     padding: .5rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .search__container{

@@ -5,7 +5,7 @@
     border-radius: 10px;
     position: relative;
     cursor: pointer;
-    transition: transform .2s;
+    animation: fadein 2s;
 }
 
 .category-card img{
@@ -29,3 +29,11 @@
 .category-card__img{
     height: 100%;
 }
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+  }
