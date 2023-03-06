@@ -1,10 +1,6 @@
 import './Form.css'
-import { personalInfoActions } from '../store/PersonalInfoSlice'
-import { useDispatch } from 'react-redux'
 
 export default function Form() {
-  const dispatch = useDispatch(state => state.personalInfo)
-
   return (
     <form className='form' action="">
     <h3>Your address</h3>

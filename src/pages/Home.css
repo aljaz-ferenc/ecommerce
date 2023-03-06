@@ -117,16 +117,25 @@
     .slider-image-container > div{
       font-size: 1.5rem;
     }
+    .slider{
+      height: 13rem;
+    }
 }
 
 @media (max-width: 768px){
     .slider__chevron{
-      height: 4rem;
+      height: 3rem;
     }
     .slider-image-container span{
       width: 50%;
     }
     .slider-image-container > div{
       font-size: 1.5rem;
+    }
+    .slider{
+      height: 5rem;
+    }
+    .slider span{
+      font-size: 1rem;
     }
 }

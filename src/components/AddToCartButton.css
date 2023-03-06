@@ -40,3 +40,17 @@
     gap: 1rem;
     align-items: center;
 }
+
+
+@media(max-width: 768px){
+    .add-cart__btn{
+        width: 15rem;
+        font-size: 1rem;
+        padding: .6rem 2rem;
+    }
+    .add-cart__amount--container input{
+        font-size: 1rem;
+        height: 1.5rem;
+        width: 3rem;
+    }
+}

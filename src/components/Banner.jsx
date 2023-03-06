@@ -1,5 +1,4 @@
 import "./Banner.css";
-import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartCheckoutSharpIcon from "@mui/icons-material/ShoppingCartCheckoutSharp";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -9,6 +8,7 @@ import { searchActions } from "../store/SearchSlice";
 import { getAllItems } from "../../supabase/supabase";
 import { useNavigate } from "react-router-dom";
 import spinner from "../icons/search-spinner.svg";
+import logo from '../icons/vite.svg'
 
 export default function Banner() {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ export default function Banner() {
   return (
     <div className="banner">
       <Link className="logo" to="/">
-        <img className="logo__image" src="../public/vite.svg" alt="" />
+        <img className="logo__image" src={logo} alt="logo" />
         <span className="logo__text">Store</span>
       </Link>
       <form className="search__container" action="">

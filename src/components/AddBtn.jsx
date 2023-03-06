@@ -8,7 +8,6 @@ export default function AddBtn({id}) {
     dispatch(cartActions.addToCart({id, amount: 1}))
   }
 
-
   return (
     <svg
     style={{width: 3 + 'rem'}}

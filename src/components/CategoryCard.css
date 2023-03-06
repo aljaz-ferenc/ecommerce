@@ -37,3 +37,23 @@
         opacity: 1;
     }
   }
+
+@media(max-width: 1440px){
+    .categories-list{
+        gap: 1rem;
+        max-width: 90%;
+    }
+
+}
+@media(max-width: 1024px){
+    .category-card{
+        width: 11rem;
+        height: 17rem;
+    }
+}
+@media(max-width: 425px){
+    .category-card{
+        width: 8rem;
+        height: 12rem;
+    }
+}

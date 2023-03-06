@@ -26,15 +26,21 @@
 
 
 @media (max-width: 1024px) {
-    .popular__container :first-child{
+    .popular__container img{
+        width: 100%;
+    }
+    .popular__container a:first-child{
         display: none;
     }  
 }
 
 @media (max-width: 768px) {
-    
+    .popular__container img{
+        max-height: 10rem;
+        max-width: 5rem;
+    }
     .popular-card{
         margin: 3px;
-
+        width: 8rem;
     }   
 }

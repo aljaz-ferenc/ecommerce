@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 import PopularCard from "./PopularCard";
 import "./MostPopular.css";
 import { getAllItems } from "../../supabase/supabase";

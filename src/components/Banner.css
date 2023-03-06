@@ -86,4 +86,7 @@
     .logo__text{
         display: none;
     }
+    .banner{
+        height: 3rem;
+    }
 }
