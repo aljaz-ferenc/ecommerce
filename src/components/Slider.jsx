@@ -57,10 +57,10 @@ export default function Slider() {
         transform: `translate(-${window.innerWidth * (state - 1)}px)`,
       }}
     >
-      <div className="image1">Unique gifts for every occasion. Shop now!</div>
-      <div className="image2">Boost productivity with our office products. Shop now!</div>
-      <div className="image3">Upgrade your wardrobe with our latest fashion trends. Shop now!</div>
-      <div className="image4">Find your beauty essentials. Shop now!</div>
+      <div className="image1"><span>Unique gifts for every occasion. Shop now!</span></div>
+      <div className="image2"><span>Boost productivity with our office products. Shop now!</span></div>
+      <div className="image3"><span>Upgrade your wardrobe with our latest fashion trends. Shop now!</span></div>
+      <div className="image4"><span>Find your beauty essentials. Shop now!</span></div>
     </div>
   </div>
   )

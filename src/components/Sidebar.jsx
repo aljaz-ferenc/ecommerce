@@ -19,7 +19,7 @@ console.log(Link)
 
   return (
     <div className="sidebar">
-      <NavLink onClick={() => redirect('/electronics')}className="sidebar__category" >Electronics</NavLink>
+      <Link onClick={() => redirect('/electronics')}className="sidebar__category" >Electronics</Link>
       <Link onClick={() => redirect('/clothing')} className="sidebar__category">Clothing</Link>
       <Link onClick={() => redirect('/beauty')} className="sidebar__category">Beauty</Link>
       <Link onClick={() => redirect('/sports')} className="sidebar__category">Sports</Link>

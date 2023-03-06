@@ -61,3 +61,14 @@
     content: 'Complete Order';
     width: max-content;
 }
+
+@media(max-width: 768px){
+    .cart-navigation{
+        max-width: 70%;
+    }
+}
+@media(max-width: 425px){
+    .cart-navigation{
+        margin-top: 2rem;
+    }
+}

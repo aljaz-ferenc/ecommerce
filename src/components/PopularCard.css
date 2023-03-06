@@ -23,3 +23,18 @@
 .popular__price{
     align-self: flex-start;
 }
+
+
+@media (max-width: 1024px) {
+    .popular__container :first-child{
+        display: none;
+    }  
+}
+
+@media (max-width: 768px) {
+    
+    .popular-card{
+        margin: 3px;
+
+    }   
+}

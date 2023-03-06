@@ -56,17 +56,15 @@ export default function Banner() {
   return (
     <div className="banner">
       <Link className="logo" to="/">
-        <img src="../public/vite.svg" alt="" />
-        Store
+        <img className="logo__image" src="../public/vite.svg" alt="" />
+        <span className="logo__text">Store</span>
       </Link>
       <form className="search__container" action="">
         <input onChange={handleInput} className="search__input" type="text" placeholder="Search..." />
-        <button className="search__btn">
-          <SearchIcon />
-        </button>
       </form>
       <Link to="cart" className="banner__cart">
-        <span>Cart ({numOfItems})</span>
+        <span className="cart-text">Cart</span>
+          <span> ({numOfItems})</span>
         <ShoppingCartCheckoutSharpIcon color="primary" />
       </Link>
     </div>

@@ -30,3 +30,9 @@
 .product-card__text--price{
     margin-top: auto;
 }
+
+@media (max-width: 768px) {
+    .product-card{
+        max-width: 95%;
+    }
+  }

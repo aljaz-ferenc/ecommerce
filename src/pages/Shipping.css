@@ -6,3 +6,16 @@
     width: 95%;
     margin: 0 auto;
 }
+
+@media (max-width: 768px){
+    .shipping{
+        gap: .3rem;
+        width: 100%;
+    }
+    .shipping-input{
+        gap: .3rem;
+    }
+    .shipping h3{
+        font-size: .5rem;
+    }
+}

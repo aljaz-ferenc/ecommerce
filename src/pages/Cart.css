@@ -124,3 +124,41 @@
 .cart__header{
 color: #fff;
 }
+
+@media (max-width: 1024px){
+  .cart{
+    padding: 3rem 10%;
+  }
+}
+
+@media (max-width: 768px){
+  .cart__container{}
+  
+  .cart{
+    padding: 0 3%;
+    margin: 0  auto;
+    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
+@media (max-width: 425px){
+  .cart{
+    gap:1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .cart__header{
+    font-size: 1rem;
+  }
+
+  .cart__container{
+    margin: 0;
+  }
+  
+  .cart .back-link{
+    font-size: .7rem;
+    margin: .2rem;
+  }
+}

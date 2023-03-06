@@ -4,9 +4,6 @@
     justify-content: space-around;
     align-self: flex-start;
     background-color: rgb(210, 210, 210);
-    /* position: sticky; */
-    /* top: 4rem;
-    position: sticky; */
     z-index: 9999;
 }
 
@@ -25,4 +22,22 @@
 .sidebar__category:hover{
     background-color: rgb(108, 107, 107);
     color: #fff;
+}
+
+@media (max-width: 1024px){
+    .sidebar__category{
+        width: max-content;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .sidebar__category{
+        width: max-content;
+        font-size: .7rem;
+    }
+}
+@media (max-width: 375px){
+    .sidebar__category{
+        display: none;
+    }
 }

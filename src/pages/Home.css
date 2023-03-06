@@ -110,3 +110,23 @@
   padding-top: 3rem;
 }
 
+@media (max-width: 1024px){
+    .slider__chevron{
+      height: 4rem;
+    }
+    .slider-image-container > div{
+      font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .slider__chevron{
+      height: 4rem;
+    }
+    .slider-image-container span{
+      width: 50%;
+    }
+    .slider-image-container > div{
+      font-size: 1.5rem;
+    }
+}
