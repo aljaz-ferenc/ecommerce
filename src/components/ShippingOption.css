@@ -56,5 +56,12 @@
     .shipping-option__text h3{
         font-size: .6rem !important;
     }
-}
 
+
+}
+@media (max-width: 425px){
+    .shipping-option__text p{
+        display: none;
+    }
+
+}

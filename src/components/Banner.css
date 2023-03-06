@@ -29,6 +29,8 @@
     display: flex;
     overflow: hidden;
     align-items: center;
+    background-color: #fff;
+    padding: 0 1rem;
 }
 
 .search__input,
@@ -37,7 +39,6 @@
     width: 100%;
     border: none;    
     outline: none;
-    padding-left: 1rem;
 }
 
 

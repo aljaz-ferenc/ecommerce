@@ -46,7 +46,7 @@
 }
 
 .cart-navigation .number:first-child::after{
-    content: 'Preview Cart';
+    content: 'Cart';
     width: max-content;
 }
 .cart-navigation .number:nth-child(2)::after{
@@ -54,11 +54,11 @@
     width: max-content;
 }
 .cart-navigation .number:nth-child(3)::after{
-    content: 'Personal info';
+    content: 'Info';
     width: max-content;
 }
 .cart-navigation .number:nth-child(4)::after{
-    content: 'Complete Order';
+    content: 'Order';
     width: max-content;
 }
 
@@ -70,5 +70,11 @@
 @media(max-width: 425px){
     .cart-navigation{
         margin-top: 2rem;
+    }
+    .number{
+        font-size: .8rem;
+    }
+    .number::after{
+        font-size: .6rem;
     }
 }

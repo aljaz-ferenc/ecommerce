@@ -131,9 +131,7 @@ color: #fff;
   }
 }
 
-@media (max-width: 768px){
-  .cart__container{}
-  
+@media (max-width: 768px){  
   .cart{
     padding: 0 3%;
     margin: 0  auto;
