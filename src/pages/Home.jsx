@@ -22,7 +22,6 @@ export default function Home() {
     if(counter === 6){
       setLoading(false)
     }
-    console.log(loading)
   }, [counter])
 
   useEffect(() => {

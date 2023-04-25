@@ -22,18 +22,11 @@ export default function Category() {
 
   function count() {
     setLoadCount((prevCount) => prevCount + 1);
-    console.log("counting", loadCount);
   }
 
   useEffect(() => {
     if (loadCount == items.length) {
       setIsloading(false);
-      console.log(isLoading)
-      console.log(loadCount, items.length);
-      console.log('items', items.length)
-    }else{
-      console.log(isLoading)
-
     }
   }, [loadCount, items]);
 

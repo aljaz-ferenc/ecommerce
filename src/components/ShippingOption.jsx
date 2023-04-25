@@ -17,8 +17,6 @@ export default function ShippingOption({
     dispatch(shippingActions.setShipping({shipping: title, cost: price}))
   }
 
-  console.log(title)
-
   return (
     <div className = {shipping?.shipping === title ? "shipping-input selected" : "shipping-input"}>
       <input
