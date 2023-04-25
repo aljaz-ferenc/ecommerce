@@ -1,7 +1,3 @@
-import Banner from "../components/Banner";
-import Slider from "../components/Slider";
-import ClipLoader from "react-spinners/ClipLoader";
-
 import { useEffect, useState } from "react";
 import { getCategories } from "../../supabase/supabase";
 

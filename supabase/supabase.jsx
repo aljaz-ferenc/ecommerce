@@ -1,9 +1,6 @@
-
 import { createClient } from '@supabase/supabase-js'
 
-// const supabaseUrl = process.env.REACT_APP_SUPABASE_URL
 const supabaseUrl = 'https://hbrtheedcngbriamntkr.supabase.co'
-// const supabaseKey = process.env.REACT_APP_SUPABASE_KEY
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnRoZWVkY25nYnJpYW1udGtyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc4NTkzMDMsImV4cCI6MTk5MzQzNTMwM30.wzsSUDOkBsd6hBz2RLvQFPV8GpZHWddpVVGCfEWJAfc'
 const supabase = createClient(supabaseUrl, supabaseKey)
 

@@ -23,18 +23,18 @@ import SearchResults from "./pages/SearchResults";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route exact path="/" errorElement={<ErrorPage/>} element={<RootLayout />}>
+    <Route path="/" errorElement={<ErrorPage/>} element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="product/:product" element={<Details />} />
-      <Route exact path="search-results" element={<SearchResults />} />
+      <Route path="search-results" element={<SearchResults />} />
       <Route path=":category" element={<Category />} />
     </Route>
       <Route path="cart" errorElement={<h1>Seems like this page doesn't exist :(</h1>} element={<Cart />} >
-        <Route exact index element={<CartContent/>}/>
-        <Route exact path="shipping" element={<Shipping/>}/>
-        <Route exact path="personal-info" element={<PersonalInfo/>}/>
-        <Route exact path="complete-order" element={<CompleteOrder/>}/>
-        <Route exact path="thanks" element={<Thanks/>}/>
+        <Route index element={<CartContent/>}/>
+        <Route path="shipping" element={<Shipping/>}/>
+        <Route path="personal-info" element={<PersonalInfo/>}/>
+        <Route path="complete-order" element={<CompleteOrder/>}/>
+        <Route path="thanks" element={<Thanks/>}/>
       </Route>
       <Route path="*" element={<NotFound />} />
     </>

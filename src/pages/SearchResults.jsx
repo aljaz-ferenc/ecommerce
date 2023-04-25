@@ -4,7 +4,6 @@ import './SearchResults.css'
 
 export default function SearchResults() {
   const items = useSelector((state) => state.search);
-  console.log(items)
 
   return (
     <div className="search-results">

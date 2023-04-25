@@ -9,9 +9,7 @@ import cat5 from "../images/categories/cat5.webp";
 
 import { useDispatch } from "react-redux";
 import { categoryActions } from "../store/CategorySlice";
-import { Navigate, useNavigate } from "react-router";
-import { redirect } from "react-router";
-import { getCategories } from "../../supabase/supabase";
+import { useNavigate } from "react-router";
 
 const images = [cat0, cat1, cat2, cat3, cat4, cat5];
 

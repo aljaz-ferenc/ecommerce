@@ -1,4 +1,4 @@
-import { Navigate, useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { getCategoryItems, getSpecificItem } from "../../supabase/supabase";
 import "./Details.css";

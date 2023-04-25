@@ -1,13 +1,8 @@
 import "./Sidebar.css";
-import { useSelector } from "react-redux";
-import { useRef } from "react";
-import { Navigate, useNavigate } from "react-router";
-import { Link, NavLink } from "react-router-dom";
-import Category from "../pages/Category";
+import {useNavigate } from "react-router";
+import { Link} from "react-router-dom";
 
 export default function Sidebar() {
-  const sidebarRef = useRef();
-  const categories = useSelector((state) => state.store);
   const navigate = useNavigate();
 
   function redirect(path) {

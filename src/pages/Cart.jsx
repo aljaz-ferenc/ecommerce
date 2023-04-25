@@ -21,9 +21,7 @@ export default function Cart() {
   }, 0);
 
   function handleBack() {
-    if (state > 0) {
-      dispatch(stateActions.setState(-1));
-    }
+    state > 0 && dispatch(stateActions.setState(-1));
   }
 
   function handleContinue(e) {
@@ -31,33 +29,32 @@ export default function Cart() {
   }
 
   useEffect(() => {
-    if (state === 0) navigate("/cart");
-    if (state === 1) navigate("/cart/shipping");
-    if (state === 2) {
-      navigate("/cart/personal-info");
-    }
-    if (state === 3) {
-      navigate("/cart/complete-order");
-    }
+    state === 0 && navigate("/cart");
+    state === 1 && navigate("/cart/shipping");
+    state === 2 && navigate("/cart/personal-info");
+    state === 3 && navigate("/cart/complete-order");
+
     setHeading();
   }, [state]);
 
   function setHeading() {
-    if (state === 0) {
-      setHeadingState("Your Cart");
-      setButtonText("Continue");
-    }
-    if (state === 1) {
-      setHeadingState("Shipping");
-      setButtonText("Continue");
-    }
-    if (state === 2) {
-      setHeadingState("Personal info");
-      setButtonText("Review");
-    }
-    if (state === 3) {
-      setHeadingState("Complete Order");
-      setButtonText("Order");
+    switch (state) {
+      case 0:
+        setHeadingState("Your Cart");
+        setButtonText("Continue");
+        break;
+      case 1:
+        setHeadingState("Shipping");
+        setButtonText("Continue");
+        break;
+      case 2:
+        setHeadingState("Personal info");
+        setButtonText("Review");
+        break;
+      case 3:
+        setHeadingState("Complete Order");
+        setButtonText("Order");
+        break;
     }
   }
 

@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import "./CreditCardInfo.css";
-import { useSelector } from "react-redux";
 
 export default function CreditCardInfo() {
 

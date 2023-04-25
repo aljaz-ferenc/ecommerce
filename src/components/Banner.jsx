@@ -26,7 +26,7 @@ export default function Banner() {
   function getSearch(e) {
     if (searchInput === "" || !searchInput) return;
     getAllItems()
-      .then((data) => items.push(data))
+    .then((data) => items.push(data))
       .then(filterItems)
       .then(setSearching(false))
   }
@@ -42,8 +42,9 @@ export default function Banner() {
     setSearching(false);
     navigate("/search-results");
   }
-
+  
   function handleInput(e) {
+    e.preventDefault()
     setSearchInput(e.target.value);
     if (searchInput) {
       setSearching(true);
@@ -70,7 +71,7 @@ export default function Banner() {
         <img className="logo__image" src={logo} alt="logo" />
         <span className="logo__text">Store</span>
       </Link>
-      <form className="search__container" action="">
+      <form onSubmit={(e) => e.preventDefault()} className="search__container" action="">
         <input
           onChange={handleInput}
           className="search__input"
