@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useParams } from "react-router";
 import ProductCard from "../components/ProductCard";
-import Sidebar from "../components/Sidebar";
 import { getCategoryItems, getCategory } from "../../supabase/supabase";
 import "./Category.css";
 
@@ -9,7 +8,6 @@ export default function Category() {
   const [items, setItems] = useState([]);
   const [category, setCategory] = useState();
   const params = useParams();
-  const navigate = useNavigate();
   const [isLoading, setIsloading] = useState(true);
   const [loadCount, setLoadCount] = useState(0);
 
